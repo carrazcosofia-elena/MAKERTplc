@@ -122,7 +122,7 @@ def product_delete(request, pk):
 def cart_detail(request):
     cart = Cart.objects.get(user=request.user)
 
-    return render(request, 'marketplace/cart_detail.html', {
+    return render(request, 'store/cart_detail.html', {
         'cart': cart
     })
 
